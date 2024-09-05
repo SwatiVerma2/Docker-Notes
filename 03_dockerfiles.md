@@ -22,9 +22,9 @@ A Dockerfile is a text document that contains a series of instructions or comman
 Q1 Difference between COPY and ADD.
 
 Key differences:
-Automatic extraction: ADD extracts compressed files automatically, while COPY does not.
-URL support: ADD can extract from URLs, while COPY cannot.
-Simplicity: COPY is generally simpler to use due to its straightforward functionality.
+- Automatic extraction: ADD extracts compressed files automatically, while COPY does not.
+- URL support: ADD can extract from URLs, while COPY cannot.
+- Simplicity: COPY is generally simpler to use due to its straightforward functionality.
 
 Q2 Difference between RUN and CMD.
 
