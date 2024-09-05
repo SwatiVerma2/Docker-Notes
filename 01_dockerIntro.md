@@ -2,12 +2,8 @@
 Virtualization is the process of creating a virtual version of a computing resource, such as a server, operating system, or storage device. This allows multiple virtual machines (VMs) to run simultaneously on a single physical machine, improving resource utilization and efficiency.
 
 Example
-- Split the resources
-  
-  A machine that has 2 tb HDD, RAM 16GB rthat can be virtually divided into two resources having 8GB RAM and 1TB HDD.
-- Add  the resources
-  
-A mobile has internal storage and SD Card. By using memory card as internal memory we can accomodate a bigger file. It's like a signle memory or virtualized memory. If you take out your memory card the file will be corrupted
+- Splitting the resources : A machine that has 2 tb HDD, RAM 16GB rthat can be virtually divided into two resources having 8GB RAM and 1TB HDD.
+- Adding the resources : A mobile has internal storage and SD Card. By using memory card as internal memory we can accomodate a bigger file. It's like a signle memory or virtualized memory. If you take out your memory card the file will be corrupted
   
 ## Scenarios and Problems Without Virtualization
 Before virtualization became widespread, organizations faced significant challenges in managing their computing resources:
@@ -49,7 +45,7 @@ Type 2 (Hosted Hypervisor):
 - Offers flexibility but may have slightly lower performance compared to Type 1.
 - Examples: VirtualBox, VMware Workstation, Parallels Desktop
 
-### OS-level virtualization and hardware-level virtualization 
+## OS-level virtualization and hardware-level virtualization 
 Both approaches to creating virtual environments, but they differ in terms of how the underlying system is managed and isolated. 
 
   1. OS-Level Virtualization
@@ -100,7 +96,7 @@ Disadvantages
 - Security Risks: Containers share the OS kernel, leading to potential security vulnerabilities.
 - Dependency on Orchestration Tools: Scaling requires additional tools like Kubernetes, adding complexity.
 
-# Architecture of Docker
+## Architecture of Docker
 
 ![image](https://github.com/user-attachments/assets/7721d75b-bca0-40d9-969e-35f3e62bb27c)
 
