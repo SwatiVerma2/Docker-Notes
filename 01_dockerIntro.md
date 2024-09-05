@@ -182,12 +182,12 @@ Q4 Difference between image and layer?
 
 Docker Image:
 
-Definition: A Docker image is a complete package that contains everything needed to run an application, including the application code, libraries, dependencies, and environment settings. It is a read-only template used to create containers.
+- Definition: A Docker image is a complete package that contains everything needed to run an application, including the application code, libraries, dependencies, and environment settings. It is a read-only template used to create containers.
 
-Role: It serves as the blueprint for creating Docker containers.
+- Role: It serves as the blueprint for creating Docker containers.
 
 Docker Layer:
 
-Definition: Layers are individual components of a Docker image. Each command in a Dockerfile (e.g., RUN, COPY) creates a new layer. These layers are stacked on top of each other to form the complete image.
+- Definition: Layers are individual components of a Docker image. Each command in a Dockerfile (e.g., RUN, COPY) creates a new layer. These layers are stacked on top of each other to form the complete image.
 
-Role: Layers make Docker images more efficient by allowing shared, reusable layers between images. Changes are made by adding new layers rather than modifying existing ones, which allows for caching and faster builds.
+- Role: Layers make Docker images more efficient by allowing shared, reusable layers between images. Changes are made by adding new layers rather than modifying existing ones, which allows for caching and faster builds.
