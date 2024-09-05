@@ -1,7 +1,69 @@
 # What is a Docker file?
-A Dockerfile is a text document that contains a series of instructions or commands to build a Docker image. 
+A Dockerfile is a text document that contains a series of instructions or commands to build a Docker image. These instructions are executed sequentially to create the final image.
 
-It specifies the base image, operating system, packages to install, files to copy, and commands to run within the container. 
+### Common Instructions
+
+FROM: The FROM instruction specifies the base image
+RUN: Executes commands within the container. It executes at image build time, not at the container runtime. 
+COPY: Copies files from the host to the container.
+ADD: Copies files from the host to the container, with automatic tar extraction.
+WORKDIR: Sets the working directory within the container.
+ENV: Sets environment variables.
+ARG: to define the name of a parameter and it's default value.
+EXPOSE: Exposes ports for the container.
+CMD: Sets the default command to run when the container starts. Only one CMD instruction is allowed per Dockerfile.
+ENTRYPOINT: Sets the default executable for the container.
+VOLUME: Creates a mount point for a volume.
+USER: Sets the user inside the container.
+
+## Interview Questions
+
+Q1 Difference between COPY and ADD.
+
+Key differences:
+Automatic extraction: ADD extracts compressed files automatically, while COPY does not.
+URL support: ADD can extract from URLs, while COPY cannot.
+Simplicity: COPY is generally simpler to use due to its straightforward functionality.
+
+Q2 Difference between RUN and CMD.
+
+Key differences:
+
+- Execution timing: RUN executes during build, while CMD executes at runtime.
+- Purpose: RUN modifies the image, while CMD sets the default command.
+- Overridability: CMD can be overridden, while RUN cannot.
+
+Use cases:
+
+- RUN: Install packages, create files, configure settings, and build your application.
+- CMD: Set the default command to run when the container starts, and allow users to override it.
+
+Q3 Difference between ENTRYPOINT and CMD.
+
+ENTRYPOINT
+
+- Default executable: Sets the default executable that will be executed when the container starts.
+- Harder to override: While it can be overridden, it's more difficult to do so compared to CMD.
+
+CMD
+
+- Default command: Sets the default command that will be executed when the container starts.
+- Easily overridden: Can be easily overridden when running the container using the docker run command.
+  
+Q4 Difference between ARG and ENV.
+
+ARG
+
+- Build-time variable: An ARG is a build-time variable. Its value is specified when the image is built using the `docker build` command with the `--build-arg` flag.
+- Not persisted in the image: The value of an ARG is not persisted in the final image.
+- Used for dynamic values: Useful for passing dynamic values during the build process, such as version numbers or configuration parameters.
+
+ENV
+
+- Runtime variable: An ENV sets an environment variable that is persisted in the final image.
+- Accessible within the container: The value of an ENV is accessible within the running container.
+- Used for default values: Useful for setting default values for environment variables that may be overridden at runtime.
+
 
 ## Example Dockerfile:
 
