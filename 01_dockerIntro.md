@@ -66,7 +66,7 @@ Both approaches to creating virtual environments, but they differ in terms of ho
 - It is written in GO language.
 - It performs OS level virtualization called Containerization.
 
-![image](https://github.com/user-attachments/assets/400ccbc7-1595-4128-a493-3b702163fe64)
+![image](https://github.com/user-attachments/assets/9f6c3416-7c43-4637-b2fe-8c2623486c2d)
 
 ## Docker's Problem Addressed
 
