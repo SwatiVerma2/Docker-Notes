@@ -30,9 +30,8 @@ Eg. docker run -it --name container1 ubuntu
 ### 6. To go inside container
 `docker attach <container-name>`
 
-This command is used to attach your terminal to a running Docker container. When you execute this command, your terminal session will be merged with the container's standard input, output, and error streams.
-
-This means that anything you type in your terminal will be sent to the container, and any output from the container will be displayed in your terminal.
+- This command is used to attach your terminal to a running Docker container. When you execute this command, your terminal session will be merged with the container's standard input, output, and error streams.
+- This means that anything you type in your terminal will be sent to the container, and any output from the container will be displayed in your terminal.
 
 ### 7. To view all the containers or To list the status of all the containers
 `docker ps -a`
@@ -45,9 +44,8 @@ This means that anything you type in your terminal will be sent to the container
 
 Eg. docker create -d --name my_container nginx
 
-It is used to create a new Docker container but does not start it.
-
-It essentially prepares the container for running by configuring its network, storage, and other settings based on the specified image and options.
+- It is used to create a new Docker container but does not start it.
+- It essentially prepares the container for running by configuring its network, storage, and other settings based on the specified image and options.
 
 ### 10. To stop containers
 `docker stop <container-name>`
