@@ -16,6 +16,23 @@ A Dockerfile is a text document that contains a series of instructions or comman
 11. **VOLUME**: Creates a mount point for a volume.
 12. **USER**: Sets the user inside the container.
 
+## Example Dockerfile:
+
+```Dockerfile
+FROM ubuntu:latest
+
+# Install Nginx
+RUN apt-get update && apt-get install -y nginx
+
+# Copy Nginx configuration
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx as the default command
+CMD ["nginx", "-g", "daemon off;"]
+```
 
 ## Interview Questions
 
@@ -66,20 +83,4 @@ ENV
 - Used for default values: Useful for setting default values for environment variables that may be overridden at runtime.
 
 
-## Example Dockerfile:
 
-```Dockerfile
-FROM ubuntu:latest
-
-# Install Nginx
-RUN apt-get update && apt-get install -y nginx
-
-# Copy Nginx configuration
-COPY nginx.conf /etc/nginx/nginx.conf
-
-# Expose port 80
-EXPOSE 80
-
-# Start Nginx as the default command
-CMD ["nginx", "-g", "daemon off;"]
-```
