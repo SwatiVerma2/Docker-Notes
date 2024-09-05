@@ -3,18 +3,19 @@ A Dockerfile is a text document that contains a series of instructions or comman
 
 ### Common Instructions
 
-FROM: The FROM instruction specifies the base image
-RUN: Executes commands within the container. It executes at image build time, not at the container runtime. 
-COPY: Copies files from the host to the container.
-ADD: Copies files from the host to the container, with automatic tar extraction.
-WORKDIR: Sets the working directory within the container.
-ENV: Sets environment variables.
-ARG: to define the name of a parameter and it's default value.
-EXPOSE: Exposes ports for the container.
-CMD: Sets the default command to run when the container starts. Only one CMD instruction is allowed per Dockerfile.
-ENTRYPOINT: Sets the default executable for the container.
-VOLUME: Creates a mount point for a volume.
-USER: Sets the user inside the container.
+1. **FROM**: The `FROM` instruction specifies the base image.
+2. **RUN**: Executes commands within the container. It executes at image build time, not at the container runtime.
+3. **COPY**: Copies files from the host to the container.
+4. **ADD**: Copies files from the host to the container, with automatic tar extraction.
+5. **WORKDIR**: Sets the working directory within the container.
+6. **ENV**: Sets environment variables.
+7. **ARG**: Defines the name of a parameter and its default value.
+8. **EXPOSE**: Exposes ports for the container.
+9. **CMD**: Sets the default command to run when the container starts. Only one `CMD` instruction is allowed per Dockerfile.
+10. **ENTRYPOINT**: Sets the default executable for the container.
+11. **VOLUME**: Creates a mount point for a volume.
+12. **USER**: Sets the user inside the container.
+
 
 ## Interview Questions
 
