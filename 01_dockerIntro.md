@@ -191,3 +191,11 @@ Docker Layer:
 - Definition: Layers are individual components of a Docker image. Each command in a Dockerfile (e.g., RUN, COPY) creates a new layer. These layers are stacked on top of each other to form the complete image.
 
 - Role: Layers make Docker images more efficient by allowing shared, reusable layers between images. Changes are made by adding new layers rather than modifying existing ones, which allows for caching and faster builds.
+
+Q5 Can a paused container be removed from Docker?
+No, it is not possible! A container MUST be in the stopped state before we can remove it.
+
+Q6 Docker Namespace
+
+A namespace is basically a Linux feature that ensures OS resources partition in a mutually exclusive manner. This forms the core concept behind containerization as namespaces introduce a layer of isolation amongst the containers. In docker, the namespaces ensure that the containers are portable and they don't affect the underlying host. Examples for namespace types that are currently being supported by Docker – PID, Mount, User, Network, IPC.
+
