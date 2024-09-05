@@ -5,6 +5,8 @@
 - It allows you to define a multi-container application in a single file (docker-compose.yml) and manage the lifecycle of the application's services as a single unit.
 - Docker Compose makes it easier to manage complex, multi-container applications, such as microservices architectures, by enabling you to start all the containers with a single command.
 
+`docker-compose.yml`
+
 ```docker-compose
 version: "3.8"
 
