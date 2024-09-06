@@ -74,8 +74,8 @@ One conatiner can ping the other container - `ping container1`
 ![image](https://github.com/user-attachments/assets/a562d416-a0ef-444e-b7f4-54da20ffb771)
 
 - By creating a custom network we allow containers to communicate with each other even without the need of an IP Address. 
-- We just provide the host name and it will resolve it automatically.
-- Also  Ip addresses might change with time. But the name remains
+- It automatically resolves the name.
+- Also  Ip addresses might change with time but the name remains the same
 
 
  To remove a network
