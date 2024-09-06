@@ -69,6 +69,15 @@ Explanation:
 ![image](https://github.com/user-attachments/assets/9bb18621-544a-4a71-a943-0489a06487cb)
 
 - Data Persistence:
+  
 The mounted volume ensures data persistence. Even if the container is deleted or stopped, any data saved in the /home/abc directory within the container is stored on the host in /d/test-folder. Therefore, it remains intact on the host machine even after the container is removed.
+
+- Sharing Volumes Across Containers
+
+Different containers can mount and use the same volume, which allows them to share data easily.
+
+Use Case: This is useful when multiple containers need to read or write the same data, such as a web server and a backup service.
+
+Key Benefit: The data remains persistent on the host and can be accessed by all containers that mount the shared volume.
 
 ![image](https://github.com/user-attachments/assets/7dfaae3c-ecfc-4f52-90a3-4cac1c6ddd58)
