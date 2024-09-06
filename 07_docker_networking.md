@@ -2,10 +2,6 @@
 
 Docker networking refers to the networking capabilities and features provided by Docker to allow containers to communicate with each other and with external networks/ internet. Docker provides various networking options that allow you to control how containers connect to networks, how they communicate with each other, and how they interact with external systems.
 
-### Network Drivers
-There are several default network drivers available in Docker and some can be installed with the help of plugins, Command to see the list of containers in Docker mentioned below.
-`docker network ls`
-
 ### Types of Network Drivers
 - bridge: If you build a container without specifying the kind of driver, the container will only be created in the bridge network, which is the default network. 
 - host: Containers will not have any IP address they will be directly created in the system network which will remove isolation between the docker host and containers. 
