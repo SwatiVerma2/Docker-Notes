@@ -40,7 +40,7 @@ Eg. docker network inspect bridge
 `docker run -it --network=host busybox` : it is connected directly to our own host machine and not the default bridge.
 
 3. **none**: This option specifies that the container should not be attached to any Docker network. In other words, the container will not have any network connectivity to other containers or the external network. It will be isolated from all networking.
-4. 
+   
 `docker run -it --network=none busybox`
 
 ### Host vs Bridge
@@ -51,29 +51,36 @@ The main difference in terms of port mapping between host and bridge network mod
 
 ## Creating Custom Networks
 
+To create a new Docker network
+
 `docker network create -d <network-driver> <your-network-name>`
-The docker network create command is used to create a new Docker network.
 
 -d bridge: This option specifies the network driver to use when creating the network
 
 ![image](https://github.com/user-attachments/assets/949ab6c1-fc28-45f4-a3e0-7ec79c974c01)
 
-Two different containers on the same network
+### Two different containers within the same network can communicate with each other.
 
-![image](https://github.com/user-attachments/assets/ab4b5b89-f419-405d-9567-97f9959bb838)
+Example:
 
-You can ping the other container
-By creating a custom network we allow containers to communicate with each other even without the need of an IP Address. We give the host name and it will resolve it automatically.
-Also  Ip addresses might change with time. But the name remains
+Two containers are running within the same network named "mern"
 
-![image](https://github.com/user-attachments/assets/5fedc6a7-e0da-44f9-8a28-4ab6684c1e51)
+`docker run -it --name=container1 --network=mern busybox`
+
+`docker run -it --name=container2 --network=mern ubuntu`
+
+One conatiner can ping the other container - `ping container1`
+
+![image](https://github.com/user-attachments/assets/a562d416-a0ef-444e-b7f4-54da20ffb771)
+
+- By creating a custom network we allow containers to communicate with each other even without the need of an IP Address. 
+- We just provide the host name and it will resolve it automatically.
+- Also  Ip addresses might change with time. But the name remains
 
 
-![image](https://github.com/user-attachments/assets/59a41689-dc08-4b5e-a098-55ba22a2fff9)
+ To remove a network
+ 
+`docker network rm <my-network>`
 
-
-`docker network rm <my-network>` : to remove a network
-
-![image](https://github.com/user-attachments/assets/6f0acc60-6d63-498d-ad45-6f7f9d1d28ac)
 
 
