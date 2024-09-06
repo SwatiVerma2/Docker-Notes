@@ -15,8 +15,9 @@ There are several default network drivers available in Docker and some can be in
 - macvlan: macvlan driver makes it possible to assign MAC addresses to a container.
 
 ## Commands
-`docker network inspect <network-driver>` : which container is connected with bridge network
-It is used to display detailed information about a Docker network. The output contains information about the default network named bridge. This information includes details such as the network's name, ID, driver, and configuration.
+`docker network inspect <network-driver>` : which container is connected with bridge network.
+
+It is used to display detailed information about a Docker network. The output contains information about the nextwork. This information includes details such as the network's name, ID, driver, and configuration.
 
 ![image](https://github.com/user-attachments/assets/e48aaad7-d176-4b10-827a-04cc3cfc103b)
 
