@@ -34,6 +34,18 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
+# Push a Docker Image to Docker Hub
+
+1. Log in to Docker Hub
+   
+   `docker login`
+   
+2. Tag the Image
+   `docker tag <local-image-name>:<tag> <DockerHub-username>/<repository-name>:<tag>`
+   
+3.  Push the Image to Docker Hub
+   `docker push <DockerHub-username>/<repository-name>:<tag>`
+
 ## Interview Questions
 
 Q1 Difference between COPY and ADD.
