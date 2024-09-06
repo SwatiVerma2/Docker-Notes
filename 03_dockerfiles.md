@@ -41,9 +41,11 @@ CMD ["nginx", "-g", "daemon off;"]
    `docker login`
    
 2. Tag the Image
+   
    `docker tag <local-image-name>:<tag> <DockerHub-username>/<repository-name>:<tag>`
    
 3.  Push the Image to Docker Hub
+   
    `docker push <DockerHub-username>/<repository-name>:<tag>`
 
 ## Interview Questions
