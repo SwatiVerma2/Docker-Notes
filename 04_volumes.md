@@ -44,8 +44,32 @@ Explanation of Volume Sharing:
   
 2. Using CLI
 
-`docker run -it --name <container1-name>`
+- Run a container
+  
+  `docker run -it --name=c1 ubuntu`
 
-Share volume
+   ![image](https://github.com/user-attachments/assets/b5c66956-2ba4-4f35-892c-a12537dabbec)
 
-`docker run -it --name <container2-name>  --privileged=true --volumes-from <container1-name> <image1-name>`
+- Open a new terminal and Mount a volume :
+   You can mount a local directory from your host machine into a container. This makes it possible for the container to access files from the host, and any changes 
+   made in the container to that directory will also reflect on the host.
+  
+  Create a folder on your local machine
+  
+   `mkdir /d/test-folder`
+  
+  Run the container and mount the volume
+  
+  `docker run -it -v /d/test-folder:/home/abc ubuntu`
+
+Explanation:
+
+- -v /d/test-folder:/home/abc: This mounts the directory `/d/test-folder` from your local machine (host) to `/home/abc` inside the container.
+- Now, the container can access the contents of /d/test-folder via /home/abc.
+
+![image](https://github.com/user-attachments/assets/9bb18621-544a-4a71-a943-0489a06487cb)
+
+- Data Persistence:
+The mounted volume ensures data persistence. Even if the container is deleted or stopped, any data saved in the /home/abc directory within the container is stored on the host in /d/test-folder. Therefore, it remains intact on the host machine even after the container is removed.
+
+![image](https://github.com/user-attachments/assets/7dfaae3c-ecfc-4f52-90a3-4cac1c6ddd58)
