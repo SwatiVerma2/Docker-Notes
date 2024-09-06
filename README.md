@@ -4,7 +4,7 @@ This repository contains essential notes and concepts for understanding and work
 
 ## Topics Covered:
 
-1. **01_dockerIntro.md** - Introduction to Docker and its basic components.
+1. **01_dockerIntro.md** - Introduction to Docker and its basic components. 
 2. **02_command.md** - Common Docker commands and their usage.
 3. **03_dockerfiles.md** - Writing Dockerfiles for containerization.
 4. **04_volumes.md** - Understanding Docker volumes and managing persistent data.
