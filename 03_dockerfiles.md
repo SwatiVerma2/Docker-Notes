@@ -48,6 +48,8 @@ CMD ["nginx", "-g", "daemon off;"]
    
    `docker push <DockerHub-username>/<repository-name>:<tag>`
 
+![image](https://github.com/user-attachments/assets/63b77a32-06ea-47fc-ac63-dda9a29abf9b)
+
 ## Interview Questions
 
 Q1 Difference between COPY and ADD.
