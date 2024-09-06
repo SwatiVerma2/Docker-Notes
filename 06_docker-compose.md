@@ -36,3 +36,7 @@ services:
 
 ![image](https://github.com/user-attachments/assets/af6f36f9-d2e7-41d2-bd68-6e3eed58daf6)
 
+Check this repo for use case:
+
+[Docker-compose-for-MERN-App](https://github.com/SwatiVerma2/Docker-Compose-MERN)
+
