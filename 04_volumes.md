@@ -51,6 +51,7 @@ Explanation of Volume Sharing:
    ![image](https://github.com/user-attachments/assets/b5c66956-2ba4-4f35-892c-a12537dabbec)
 
 - Open a new terminal and Mount a volume :
+  
    You can mount a local directory from your host machine into a container. This makes it possible for the container to access files from the host, and any changes 
    made in the container to that directory will also reflect on the host.
   
