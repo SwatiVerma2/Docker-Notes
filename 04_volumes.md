@@ -4,8 +4,7 @@
 - Volumes are managed by Docker and can be shared between containers.
 - This is especially useful for storing data that needs to survive even after the container stops, restarts, or is removed.
 
-
-Key features of Docker volumes:
+**Key features of Docker volumes:**
 
 - They exist outside the container's filesystem, making them independent of the container's lifecycle.
 - They can be shared across multiple containers.
@@ -22,7 +21,7 @@ VOLUME ["/myvolume1"]
 
 - Create an image
   
-`docker build -t <image1-name>`
+`docker build -t <image1-name> .`
 
 - Create a container
   
