@@ -11,9 +11,7 @@ Key features of Docker volumes:
 - They can be shared across multiple containers.
 - Docker automatically manages volumes, which simplifies handling persistent data.
 
-## Creating volumes
-
-### Using Dockerfile
+## Creating volumes using Dockerfile
    
 - Create a Dockerfile
   
@@ -42,7 +40,7 @@ Explanation of Volume Sharing:
 - Any data written in the /myvolume1 directory by container1 will be accessible to container2 and vice versa.
 - This is particularly useful when you want multiple containers to access the same persistent data without explicitly creating and managing external volumes.
   
-2. Using CLI
+ ## Creating volumes using CLI
 
 - Run a container
   
