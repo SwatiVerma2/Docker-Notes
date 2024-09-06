@@ -39,7 +39,7 @@ Eg. docker run -it --name container1 ubuntu
 ### 8. To list only running containers
 `docker ps`
 
-### 9. To create a container but not to start
+### 9. To create a container without starting it
 `docker create [Options] --name <container-name> <image-name>`
 
 Eg. docker create -d --name my_container nginx
