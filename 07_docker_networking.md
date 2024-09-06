@@ -15,9 +15,13 @@ There are several default network drivers available in Docker and some can be in
 - macvlan: macvlan driver makes it possible to assign MAC addresses to a container.
 
 ## Commands
-`docker network inspect <network-driver>` : which container is connected with bridge network.
 
-It is used to display detailed information about a Docker network. The output contains information about the nextwork. This information includes details such as the network's name, ID, driver, and configuration.
+1. It is used to display detailed information about a Docker network.
+   
+`docker network inspect <network-driver>` 
+
+-  The output contains information about the nextwork. 
+-  This information includes details such as the network's name, ID, driver, container attached to this network and configuration.
 
 ![image](https://github.com/user-attachments/assets/e48aaad7-d176-4b10-827a-04cc3cfc103b)
 
@@ -27,21 +31,23 @@ Eg. docker network inspect bridge
 
 ![image](https://github.com/user-attachments/assets/a4bd460d-c47c-4a80-a4f9-c50675e09048)
 
-`docker network ls`: Which networks are locally present
+2. Lists all the networks available on your Docker host.
+
+`docker network ls`
 
 ![image](https://github.com/user-attachments/assets/37b8c5b9-4f58-4029-a016-99fb66f03f02)
 
-### By default 3 networks are available : bridge, host, none
+3. To start a Docker container with specific network settings.
+
+`docker run -it --network=host busybox` or `docker run -it --network=none busybox`
+
+## By default 3 networks are available : bridge, host, none
 
 1. **Bridge network** is a type of network that allows containers connected to the same bridge network to communicate with each other. When you create a container without specifying a network, Docker automatically connects it to the default bridge network named bridge.
 
 2. **Host Network** : It specifies that the container should use the host's network stack instead of its own isolated network stack. In this mode, the container shares the network namespace with the host, effectively giving it full access to the host's network interfaces and ports.
 
-`docker run -it --network=host busybox` : it is connected directly to our own host machine and not the default bridge.
-
 3. **none**: This option specifies that the container should not be attached to any Docker network. In other words, the container will not have any network connectivity to other containers or the external network. It will be isolated from all networking.
-   
-`docker run -it --network=none busybox`
 
 ### Host vs Bridge
 
