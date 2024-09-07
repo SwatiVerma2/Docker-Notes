@@ -27,6 +27,19 @@ A hypervisor is a software or firmware layer that creates and manages virtual ma
 
 ![image](https://github.com/user-attachments/assets/9eeb53de-67e1-459d-94a1-ec8a2189e7ca)
 
+NOTE: 
+
+Firmware 
+- Firmware is low-level software that runs directly on hardware, controlling its basic functions. It is stored in non-volatile memory and operates without an operating system.
+
+- Example: BIOS in computers, firmware in routers, or embedded systems in appliances.
+  
+Software:
+
+- Software runs on an operating system (OS) and provides user-focused functions. It relies on the OS to interact with the hardware.
+  
+- Example: Instagram, Microsoft Word, or video games like FIFA.
+
 Types of Hypervisors
 
 ![image](https://github.com/user-attachments/assets/9409ba22-d97b-413d-9a0e-8ce1d78dbfb6)
