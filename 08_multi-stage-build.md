@@ -94,6 +94,4 @@ Key Concepts of Multi-Stage Builds
 
 **Good!! Ab kubernetes padh!**
 
-Now it's time to dive into **Kubernetes** — the power behind scalable, resilient infrastructure used by giants like Netflix and Google.
-
 Just like Virat Kohli never stops raising the bar, let's take our DevOps game to the next level with Kubernetes! 💪
