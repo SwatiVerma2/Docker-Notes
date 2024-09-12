@@ -86,3 +86,14 @@ Key Concepts of Multi-Stage Builds
 - Named Stages: You can give names to stages using the AS keyword, making it easier to refer to specific stages later in the Dockerfile.
 - Copying Artifacts: You can copy artifacts (files, binaries) from one stage to another using the COPY instruction with a specific build stage.
 - Minimizing Final Image Size: By only copying the necessary artifacts into the final stage, you avoid including development tools, dependencies, and files that are not needed in the final image.
+
+  
+## Docker ✅ — Now, It's Time for Kubernetes! ⚡
+
+<img src="vk.webp" alt="Alt Text" width="300" />  
+
+**Good!! Ab kubernetes padh!**
+
+Now it's time to dive into **Kubernetes** — the power behind scalable, resilient infrastructure used by giants like Netflix and Google.
+
+Just like Virat Kohli never stops raising the bar, let's take our DevOps game to the next level with Kubernetes! 💪
