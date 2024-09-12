@@ -36,19 +36,17 @@ CMD ["nginx", "-g", "daemon off;"]
 
 # Push a Docker Image to Docker Hub
 
-1. Log in to Docker Hub
-   
-   `docker login`
-   
-2. Tag the Image
-   
-   `docker tag <local-image-name>:<tag> <DockerHub-username>/<repository-name>:<tag>`
-   
-3.  Push the Image to Docker Hub
-   
-   `docker push <DockerHub-username>/<repository-name>:<tag>`
-
-![image](https://github.com/user-attachments/assets/63b77a32-06ea-47fc-ac63-dda9a29abf9b)
+- Create an account on [dockerHub](https://hub.docker.com/)
+- Create a repository there.
+     ![image](https://github.com/user-attachments/assets/d0b9fe6a-8a68-4134-80b6-4be50e74212c)
+- Build an image using `docker build -t vswati535201/sample-image .`
+- Log in to Docker Hub: `docker login`
+- Push the Image to Docker Hub: `docker push <DockerHub-username>/<repository-name>:<tag>`
+  Eg. `docker push vswati535201/sample-image`
+  
+   ![image](https://github.com/user-attachments/assets/63b77a32-06ea-47fc-ac63-dda9a29abf9b)
+  
+   ![image](https://github.com/user-attachments/assets/c7aecb5c-d972-48ed-b813-4059c21e2060)
 
 ## Interview Questions
 
