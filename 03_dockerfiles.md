@@ -42,9 +42,10 @@ CMD ["nginx", "-g", "daemon off;"]
 - Build an image using `docker build -t vswati535201/sample-image .`
 - Log in to Docker Hub: `docker login`
 - Push the Image to Docker Hub: `docker push <DockerHub-username>/<repository-name>:<tag>`
+  
   Eg. `docker push vswati535201/sample-image`
   
-   ![image](https://github.com/user-attachments/assets/63b77a32-06ea-47fc-ac63-dda9a29abf9b)
+
   
    ![image](https://github.com/user-attachments/assets/c7aecb5c-d972-48ed-b813-4059c21e2060)
 
