@@ -2,7 +2,7 @@
 Virtualization is the process of creating a virtual version of a computing resource, such as a server, operating system, or storage device. This allows multiple virtual machines (VMs) to run simultaneously on a single physical machine, improving resource utilization and efficiency.
 
 Example
-- Splitting the resources : A machine that has 2 tb HDD, RAM 16GB rthat can be virtually divided into two resources having 8GB RAM and 1TB HDD.
+- Splitting the resources : A machine that has 2 tb HDD, RAM 16GB that can be virtually divided into two resources having 8GB RAM and 1TB HDD.
 - Adding the resources : A mobile has internal storage and SD Card. By using memory card as internal memory we can accomodate a bigger file. It's like a signle memory or virtualized memory. If you take out your memory card the file will be corrupted
   
 ## Scenarios and Problems Without Virtualization
