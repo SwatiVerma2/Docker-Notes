@@ -49,6 +49,7 @@ Type 1 (Bare-Metal Hypervisor):
 - Runs directly on the physical hardware without an underlying operating system.
 - It has direct access to hardware resources.
 - Provides the highest performance and security.
+- used in production 
 - Examples: VMware ESXi, KVM, XenServer
 
 Type 2 (Hosted Hypervisor):
@@ -56,6 +57,7 @@ Type 2 (Hosted Hypervisor):
 - Runs on top of an operating system.
 - It does not have direct access to the host hardware.
 - Offers flexibility but may have slightly lower performance compared to Type 1.
+- used for learning and testing 
 - Examples: VirtualBox, VMware Workstation, Parallels Desktop
 
 ## OS-level virtualization and hardware-level virtualization 
