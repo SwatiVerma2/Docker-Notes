@@ -71,3 +71,20 @@ It is used to get information about the Docker daemon and its environment. It in
 
 ### 16. To delete a docker images
 `docker rmi <image_id_or_name>`
+### 17. To execute commands inside a running Docker container
+`docker exec [OPTIONS] <container_name_or_id> <command>`
+
+Use Case:
+1. Run a Command in a Container
+Eg. `docker exec my_container ls /app`
+
+2. Open an Interactive Bash Shell
+Eg.`docker exec -it my_container bash`
+
+3. Execute a Script in a Container
+Eg. `docker exec <container_name_or_id> sh -c "./script.sh"`
+
+4. Run a Detached Command
+Eg. `docker exec -d my_container some_background_task`
+
+
