@@ -68,3 +68,6 @@ It is used to get information about the Docker daemon and its environment. It in
 
 ### 15. To list all docker commands
 `docker --help`
+
+### 16. To delete a docker images
+`docker rmi <image_id_or_name>`
